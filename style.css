@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #222831;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ---------- Title Screen ---------- */
+
+#titleScreen {
+    margin-top: 100px;
+}
+
+h1 {
+    color: #e0b84b;
+    margin-bottom: 15px;
+}
+
+#titleScreen p {
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* ---------- Buttons ---------- */
+
+#startButton,
+#continueButton,
+#ending button {
+
+    background: #3d7c47;
+    color: white;
+
+    border: none;
+
+    padding: 12px 24px;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+
+    margin-top: 20px;
+}
+
+#startButton:hover,
+#continueButton:hover,
+#ending button:hover {
+
+    background: #2d6035;
+
+}
+
+/* ---------- Stats ---------- */
+
+#stats {
+
+    background: #31363f;
+
+    width: fit-content;
+
+    margin: 20px auto;
+
+    padding: 12px 25px;
+
+    border-radius: 5px;
+
+    font-size: 18px;
+
+}
+
+/* ---------- Encounter ---------- */
+
+#encounter {
+
+    background: #393e46;
+
+    max-width: 700px;
+
+    margin: 25px auto;
+
+    padding: 25px;
+
+    border-radius: 5px;
+
+}
+
+#encounter h2 {
+
+    color: #e0b84b;
+
+    margin-bottom: 15px;
+
+}
+
+#story {
+
+    line-height: 1.6;
+
+}
+
+/* ---------- Choices ---------- */
+
+#choices {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+    margin-top: 25px;
+
+}
+
+#choices button {
+
+    width: 260px;
+
+    background: #4b5563;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    padding: 18px;
+
+    font-size: 16px;
+
+}
+
+#choices button:hover {
+
+    background: #5d6877;
+
+}
+
+/* ---------- Dice ---------- */
+
+#diceArea {
+
+    margin-top: 30px;
+
+}
+
+#diceRoll {
+
+    font-size: 80px;
+
+    color: #e0b84b;
+
+    margin: 20px;
+
+}
+
+#chanceText {
+
+    font-size: 18px;
+
+}
+
+/* ---------- Result ---------- */
+
+#resultArea {
+
+    background: #393e46;
+
+    max-width: 650px;
+
+    margin: 30px auto;
+
+    padding: 25px;
+
+    border-radius: 5px;
+
+}
+
+#resultTitle {
+
+    color: #e0b84b;
+
+    margin-bottom: 15px;
+
+}
+
+#resultText {
+
+    line-height: 1.6;
+
+}
+
+/* ---------- Ending ---------- */
+
+#ending {
+
+    background: #393e46;
+
+    max-width: 700px;
+
+    margin: 40px auto;
+
+    padding: 30px;
+
+    border-radius: 5px;
+
+}
+
+#endingTitle {
+
+    color: #e0b84b;
+
+    margin-bottom: 20px;
+
+}
+
+#endingText {
+
+    line-height: 1.7;
+
+    white-space: pre-line;
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 700px) {
+
+    #choices {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+    #choices button {
+
+        width: 90%;
+
+    }
+
+    #diceRoll {
+
+        font-size: 60px;
+
+    }
+
+}
