@@ -1,0 +1,301 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#222831;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+    padding:20px;
+}
+
+.hidden{
+    display:none;
+}
+
+/* ---------- Title ---------- */
+
+#titleScreen{
+    margin-top:80px;
+}
+
+h1{
+    color:#e0b84b;
+    margin-bottom:15px;
+}
+
+#titleScreen p{
+    max-width:700px;
+    margin:20px auto;
+    line-height:1.7;
+}
+
+/* ---------- Buttons ---------- */
+
+button{
+    cursor:pointer;
+    transition:.2s;
+}
+
+#startButton,
+#continueButton,
+#ending button{
+
+    background:#3d7c47;
+    color:white;
+    border:none;
+    padding:12px 24px;
+    border-radius:6px;
+    font-size:16px;
+    margin-top:20px;
+}
+
+#startButton:hover,
+#continueButton:hover,
+#ending button:hover{
+
+    background:#2d6035;
+    transform:translateY(-2px);
+
+}
+
+button:active{
+
+    transform:scale(.97);
+
+}
+
+button:focus{
+
+    outline:3px solid #e0b84b;
+    outline-offset:3px;
+
+}
+
+button:disabled{
+
+    opacity:.6;
+    cursor:not-allowed;
+
+}
+
+/* ---------- Stats ---------- */
+
+#stats{
+
+    background:#31363f;
+    width:fit-content;
+    margin:20px auto;
+    padding:12px 25px;
+    border-radius:6px;
+    font-size:18px;
+
+}
+
+/* ---------- Progress ---------- */
+
+#progressContainer{
+
+    width:80%;
+    max-width:700px;
+    height:18px;
+    background:#444;
+    border-radius:10px;
+    margin:20px auto;
+    overflow:hidden;
+
+}
+
+#progressBar{
+
+    width:11%;
+    height:100%;
+    background:#e0b84b;
+    transition:width .5s;
+
+}
+
+/* ---------- Encounter ---------- */
+
+#encounter{
+
+    background:#393e46;
+    max-width:700px;
+    margin:25px auto;
+    padding:25px;
+    border-radius:6px;
+
+}
+
+#encounter h2{
+
+    color:#e0b84b;
+    margin-bottom:15px;
+
+}
+
+#story{
+
+    line-height:1.6;
+
+}
+
+/* ---------- Choices ---------- */
+
+#choices{
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:25px;
+
+}
+
+#choices button{
+
+    width:260px;
+    background:#4b5563;
+    color:white;
+    border:none;
+    border-radius:6px;
+    padding:18px;
+    font-size:16px;
+    line-height:1.5;
+
+}
+
+#choices button:hover{
+
+    background:#5d6877;
+    transform:translateY(-3px);
+
+}
+
+#choices small{
+
+    color:#e0b84b;
+    display:block;
+    margin-top:8px;
+    font-size:14px;
+
+}
+
+/* ---------- Dice ---------- */
+
+#diceArea{
+
+    margin-top:30px;
+
+}
+
+#diceRoll{
+
+    font-size:80px;
+    color:#e0b84b;
+    margin:20px;
+
+}
+
+#chanceText{
+
+    font-size:18px;
+    margin-bottom:10px;
+
+}
+
+/* ---------- Result ---------- */
+
+#resultArea{
+
+    background:#393e46;
+    max-width:650px;
+    margin:30px auto;
+    padding:25px;
+    border-radius:6px;
+
+}
+
+#resultTitle{
+
+    color:#e0b84b;
+    margin-bottom:15px;
+
+}
+
+#resultText{
+
+    line-height:1.6;
+
+}
+
+/* ---------- Ending ---------- */
+
+#ending{
+
+    background:#393e46;
+    max-width:700px;
+    margin:40px auto;
+    padding:30px;
+    border-radius:6px;
+
+}
+
+#endingTitle{
+
+    color:#e0b84b;
+    margin-bottom:20px;
+
+}
+
+#endingText{
+
+    line-height:1.7;
+    white-space:pre-line;
+
+}
+
+/* ---------- Footer ---------- */
+
+footer{
+
+    margin-top:60px;
+    color:#bbbbbb;
+    font-size:.9rem;
+    line-height:1.8;
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:700px){
+
+    #choices{
+
+        flex-direction:column;
+        align-items:center;
+
+    }
+
+    #choices button{
+
+        width:90%;
+
+    }
+
+    #diceRoll{
+
+        font-size:60px;
+
+    }
+
+    #progressContainer{
+
+        width:95%;
+
+    }
+
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realmwalker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- Title Screen -->
+    <!-- ========================= -->
+
+    <div id="titleScreen">
+
+        <h1>🌳 Realmwalker 🌳</h1>
+
+        <p>
+            Journey through the Nine Realms of Norse mythology. Every decision matters, and each realm presents a difficult choice. Your courage, wisdom, and a bit of luck will determine whether you become a legendary hero or fall before reaching your destination.
+        </p>
+
+        <h2>How to Play</h2>
+
+        <p>
+            • Read each encounter carefully.<br>
+            • Choose one of the two available actions.<br>
+            • Each choice has its own Chance of Success.<br>
+            • Roll the die to determine your fate.<br>
+            • Keep your health above 0 through all 9 realms to complete your journey.
+        </p>
+
+        <button id="startButton">Begin Adventure</button>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- Game Screen -->
+    <!-- ========================= -->
+
+    <div id="gameScreen" class="hidden">
+
+        <h1>🌳 Realmwalker 🌳</h1>
+
+        <!-- Stats -->
+
+        <div id="stats">
+
+            ❤️ Health:
+            <span id="health">100</span>
+
+            &nbsp;&nbsp;&nbsp;
+
+            🌍 Realm:
+            <span id="realmNumber">1</span>/9
+
+        </div>
+
+        <!-- Progress Bar -->
+
+        <div id="progressContainer">
+
+            <div id="progressBar"></div>
+
+        </div>
+
+        <!-- Encounter -->
+
+        <div id="encounter">
+
+            <h2 id="realmName">Asgard</h2>
+
+            <p id="story">
+                Press Begin Adventure to start your journey.
+            </p>
+
+        </div>
+
+        <!-- Choices -->
+
+        <div id="choices">
+
+            <button id="choice1"></button>
+
+            <button id="choice2"></button>
+
+        </div>
+
+        <!-- Dice Roll -->
+
+        <div id="diceArea" class="hidden">
+
+            <h2>🎲 Rolling...</h2>
+
+            <p id="chanceText"></p>
+
+            <div id="diceRoll">
+                1
+            </div>
+
+        </div>
+
+        <!-- Result -->
+
+        <div id="resultArea" class="hidden">
+
+            <h2 id="resultTitle"></h2>
+
+            <p id="resultText"></p>
+
+            <button id="continueButton">
+                Continue
+            </button>
+
+        </div>
+
+        <!-- Ending -->
+
+        <div id="ending" class="hidden">
+
+            <h2 id="endingTitle"></h2>
+
+            <p id="endingText"></p>
+
+            <button onclick="location.reload()">
+                Play Again
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p><strong>Realmwalker</strong></p>
+
+        <p>
+            Created by Aiden Smith
+        </p>
+
+        <p>
+            Built using HTML, CSS, and JavaScript.
+        </p>
+
+        <p>
+            Inspired by the Nine Realms of Norse mythology.
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
